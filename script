@@ -1,0 +1,14 @@
+// Select an element with a specific id
+var attribute = document.getElementById("novel_honbun");
+
+// use this for class:
+// var attribute = document.getElementsByClassName("novel_text");
+
+if (attribute) {
+    // Select all &lt;p&gt; elements
+    var paragraphs = attribute.getElementsByTagName("p");
+    
+    for (var i = 0; i &lt; paragraphs.length; i++) {
+        paragraphs[i].innerText = paragraphs[i].innerText.trimLeft();
+    }
+}
